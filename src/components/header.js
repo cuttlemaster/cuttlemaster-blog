@@ -1,14 +1,14 @@
 import React from "react"
-import { css } from "@emotion/react"
+import styled from "@emotion/styled"
 
-const headerStyles = css`
+const HeaderComponent = styled.header`
   background-color: #434343;
 `
 
 const Header = () => (
-  <header css={headerStyles}>
+  <HeaderComponent>
     <h1>Cuttlemaster</h1>
-  </header>
+  </HeaderComponent>
 )
 
 export default Header
