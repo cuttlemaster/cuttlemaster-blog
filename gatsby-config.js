@@ -1,18 +1,9 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
-
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
-module.exports = {
+module.export = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Cuttlemaster | A Blog About Things`,
+    description: `Blogs used to be the backbone of the internet and this is one man's attempt at having a place that can bring that feeling back.`,
+    author: `Caleb Flanagan`,
+    siteUrl: `https://cuttlemaster.com`,
   },
   plugins: [
     `gatsby-plugin-image`,
