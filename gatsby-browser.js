@@ -1,7 +1,10 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/
- */
+import React from "react"
+import { CacheProvider } from "@emotion/react"
+import createCache from "@emotion/cache"
+import { cache as emotionCache } from "@emotion/css"
 
-// You can delete this file if you're not using it
+const cache = createCache({ key: "cuttlemaster" })
+
+export const wrapRootElement = ({ element }) => (
+  <CacheProvider value={emotionCache}>{element}</CacheProvider>
+)
