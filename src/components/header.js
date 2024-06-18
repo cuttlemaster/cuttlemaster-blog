@@ -3,18 +3,20 @@ import styled from "@emotion/styled"
 import theme from "../styles/Theme"
 
 const HeaderComponent = styled.header`
-  padding-top: 25px;
-  padding-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 100px;
 
   h1 {
+    color: ${theme.colors.black};
     font-family: ${theme.fonts.Rubik};
     font-size: 16px;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    text-align: center;
 
     span {
-      font-size: 20px;
+      font-size: 48px;
 
       &.bracket {
         color: ${theme.colors.red};
@@ -26,8 +28,8 @@ const HeaderComponent = styled.header`
 
       &.brand {
         display: inline-block;
-        padding-bottom: 15px;
-        font-size: 16px;
+        font-size: 44px;
+        letter-spacing: 3px;
         text-transform: uppercase;
       }
     }

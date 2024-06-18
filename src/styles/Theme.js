@@ -5,11 +5,12 @@ const theme = {
     red: "#db132e",
     yellow: "#f6be11",
     blue: "#00a8e1",
-    darkGray: "#434343",
-    mainBG: "#efefef",
+    gray: "#434343",
+    htmlBG: "#F4F6F7",
   },
   fonts: {
     Rubik: "'Rubik', serif",
+    PTSerif: "'PT Serif', sans-serif",
   },
 }
 
