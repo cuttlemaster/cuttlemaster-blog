@@ -1,11 +1,11 @@
 import React from "react"
 import Header from "../components/Header"
+import MainContainer from "../components/MainContainer"
 
 const IndexPage = () => (
-  <main>
+  <MainContainer>
     <Header />
-    <p>This is your new Gatsby site.</p>
-  </main>
+  </MainContainer>
 )
 
 export default IndexPage
