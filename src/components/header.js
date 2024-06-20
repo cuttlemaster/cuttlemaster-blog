@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 import theme from "../styles/Theme"
 
 const HeaderComponent = styled.header`
-  margin-top: 25px;
+  margin-top: 100px;
   margin-bottom: 100px;
 
   h1 {
