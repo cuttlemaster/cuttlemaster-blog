@@ -6,6 +6,13 @@ module.export = {
     siteUrl: `https://cuttlemaster.com`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `lq1m23w6kg80`,
+        accessToken: `9PVg3A6MyA6ZudtZpyOwrRhMLdKAvLSP-jpL0Tc68l4`,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
