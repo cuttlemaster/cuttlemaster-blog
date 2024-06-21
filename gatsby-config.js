@@ -1,12 +1,3 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
-
-// Log the environment variables to the console
-console.log("Contentful Space ID:", process.env.CONTENTFUL_SPACE_ID)
-console.log("Contentful Access Token:", process.env.CONTENTFUL_ACCESS_TOKEN)
-console.log("Contentful Environment ID:", process.env.CONTENTFUL_ENVIRONMENT_ID)
-
 module.exports = {
   siteMetadata: {
     title: `Cuttlemaster | A Blog About Things`,
@@ -18,9 +9,12 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-        environment: process.env.CONTENTFUL_ENVIRONMENT_ID,
+        // spaceId: process.env.CONTENTFUL_SPACE_ID,
+        // accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        // environment: process.env.CONTENTFUL_ENVIRONMENT_ID,
+        spaceId: `lq1m23w6kg80`,
+        accessToken: `OP7cS4sHWeKJGqu8O0ko2ILSAq59vX6Dfr2ICTKi9A0`,
+        environment: `master`,
       },
     },
     `gatsby-plugin-image`,
