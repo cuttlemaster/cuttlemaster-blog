@@ -36,7 +36,7 @@ const HeaderComponent = styled.header`
   }
 `
 
-const Header = () => (
+const SiteHeader = () => (
   <HeaderComponent>
     <h1>
       <span className="bracket">{`[`}</span>
@@ -48,4 +48,4 @@ const Header = () => (
   </HeaderComponent>
 )
 
-export default Header
+export default SiteHeader

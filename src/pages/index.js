@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import MainContainer from "../components/MainContainer"
-import Header from "../components/Header"
+import Header from "../components/SiteHeader"
 import Post from "../components/Post"
 
 const IndexPage = ({ data }) => {
