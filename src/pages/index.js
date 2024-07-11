@@ -10,15 +10,18 @@ const IndexPage = ({ data }) => {
   return (
     <MainContainer>
       <Header />
-      {posts.map(({ node }) => (
-        <Post
-          key={node.id}
-          title={node.title}
-          date={node.date}
-          coverArt={node.coverArt}
-          content={node.Content.raw}
-        />
-      ))}
+      {posts
+        // SORT POSTS BY DATE IN DESCENDING ORDER (MOST RECENT FIRST)
+        .sort((a, b) => new Date(b.node.date) - new Date(a.node.date))
+        .map(({ node }) => (
+          <Post
+            key={node.id}
+            title={node.title}
+            date={node.date}
+            coverArt={node.coverArt}
+            content={node.Content.raw}
+          />
+        ))}
     </MainContainer>
   )
 }
