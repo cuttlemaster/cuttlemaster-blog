@@ -19,7 +19,7 @@ module.exports = {
         pluginConfig: {
           head: true, // PUTS TRACKING SCRIPT IN THE HEAD TAG INSTEAD OF BODY TAG
           respectDNT: true, // THIS PARAMETER IS OPTIONAL
-          exclude: [""], // ADD PAGE PATHS TO ARRAY BELOW TO EXCLUDE FROM TRACKING
+          exclude: ["/example"], // ADD PAGE PATHS TO ARRAY BELOW TO EXCLUDE FROM TRACKING
         },
       },
     },
