@@ -11,6 +11,19 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-google-gtag",
+      options: {
+        trackingIds: [
+          "G-Y50MJL6QDC", // Google Analytics / GA
+        ],
+        pluginConfig: {
+          head: true, // PUTS TRACKING SCRIPT IN THE HEAD TAG INSTEAD OF BODY TAG
+          respectDNT: true, // THIS PARAMETER IS OPTIONAL
+          exclude: [""], // ADD PAGE PATHS TO ARRAY BELOW TO EXCLUDE FROM TRACKING
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
