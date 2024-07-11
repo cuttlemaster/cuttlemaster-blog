@@ -3,5 +3,8 @@
   command = "gatsby build"
   publish = "public"
 
+  [build.environment]
+  NODE_VERSION = "18.0.0"
+
 [[plugins]]
   package = "@netlify/plugin-gatsby"
