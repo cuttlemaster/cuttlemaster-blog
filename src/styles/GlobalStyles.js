@@ -42,7 +42,7 @@ const GlobalStyles = () => {
             margin-bottom: 25px;
             font-size: 20px;
             line-height: 30px;
-            text-align: justify;
+            text-align: left;
           }
         }
       `}
