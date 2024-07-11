@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => {
           key={node.id}
           title={node.title}
           date={node.date}
-          coverArtURL={node.coverArt.url}
+          coverArt={node.coverArt}
           content={node.Content.raw}
         />
       ))}

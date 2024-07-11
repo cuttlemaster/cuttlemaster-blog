@@ -48,14 +48,15 @@ const CoverImage = styled.img`
   }
 `
 
-const Post = ({ title, date, coverArtURL, content }) => (
+const Post = ({ title, date, coverArt, content }) => (
   <PostComponent>
     <PostHeader>
       <h2>{title}</h2>
       <span>{date}</span>
     </PostHeader>
 
-    <CoverImage src={coverArtURL} alt={title} />
+    {/* <CoverImage src={coverArtURL} alt={title} /> */}
+    {coverArt && coverArt.url && <CoverImage src={coverArt.url} alt={title} />}
     <div>{documentToReactComponents(JSON.parse(content))}</div>
   </PostComponent>
 )
