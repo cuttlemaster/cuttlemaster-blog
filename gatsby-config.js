@@ -14,12 +14,15 @@ module.exports = {
       resolve: "gatsby-plugin-google-gtag",
       options: {
         trackingIds: [
-          "G-Y50MJL6QDC", // Google Analytics / GA
+          "G-Y50MJL6QDC", // GA4 ANALYTICS ID
         ],
         pluginConfig: {
           head: true, // PUTS TRACKING SCRIPT IN THE HEAD TAG INSTEAD OF BODY TAG
           respectDNT: true, // THIS PARAMETER IS OPTIONAL
           exclude: ["/example"], // ADD PAGE PATHS TO ARRAY BELOW TO EXCLUDE FROM TRACKING
+        },
+        gtagConfig: {
+          send_page_view: true, // ENABLES AUTOMATIC PAGE VIEW TRACKING
         },
       },
     },
