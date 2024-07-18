@@ -11,8 +11,8 @@ const IndexPage = ({ data }) => {
     <MainContainer>
       <Header />
       {posts
-        // SORT POSTS BY DATE IN DESCENDING ORDER (MOST RECENT FIRST)
-        .sort((a, b) => new Date(b.node.date) - new Date(a.node.date))
+        .sort((a, b) => new Date(b.node.date) - new Date(a.node.date)) // SORT POSTS BY DATE IN DESCENDING ORDER (MOST RECENT FIRST)
+        .slice(0, 5) // SLICE THE ARRAY TO GET THE FIRST 5 POSTS
         .map(({ node }) => (
           <Post
             key={node.id}
