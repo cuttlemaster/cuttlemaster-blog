@@ -6,7 +6,7 @@ const theme = {
     yellow: "#f6be11",
     blue: "#00a8e1",
     gray: "#434343",
-    htmlBG: "#F4F6F7",
+    htmlBG: "#fbfcfc",
   },
   fonts: {
     Rubik: "'Rubik', serif",
