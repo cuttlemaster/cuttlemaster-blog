@@ -11,12 +11,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        icon: `static/favicon-32x32.png`,
-      },
-    },
-    {
       resolve: "gatsby-plugin-google-gtag",
       options: {
         trackingIds: [
@@ -30,6 +24,12 @@ module.exports = {
         gtagConfig: {
           send_page_view: true, // ENABLES AUTOMATIC PAGE VIEW TRACKING
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `static/favicon-32x32.png`,
       },
     },
     {
@@ -52,5 +52,6 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-fix-fouc`,
   ],
 }
