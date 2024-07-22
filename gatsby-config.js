@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Cuttlemaster | A Blog About Things`,
+    title: `Cuttlemaster - A Blog About Things`,
     description: `Blogs used to be the backbone of the internet and this is one man's attempt at having a place that can bring that feeling back.`,
     author: `Caleb Flanagan`,
     siteUrl: `https://cuttlemaster.com`,
@@ -51,5 +51,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-react-helmet`,
   ],
 }
