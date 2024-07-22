@@ -51,7 +51,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-fix-fouc`,
+    `gatsby-plugin-react-helmet`, // GIVES THE ABILITY TO ADD THINGS TO THE HEAD TAG CONVENIENTLY
+    `gatsby-plugin-fix-fouc`, // FIXES THE FLASH OF UNSTYLED CONTENT ON PAGE LOAD/REFRESH
   ],
 }
